@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="models.request" table="request">
+
+        <!-- id tag is for your Primary Key -->
+        <id name="request" type="int" column="requestID">
+            <generator class="identity" />
+        </id>
+        <property name="request_time" type="int" />
+        <property name="eventDate" type="int" />
+        <property name="eventlocation" type="String" />
+        <property name="eventDescription" type="String" />
+        <property name="eventCost" type="int" />
+        <property name="work_justification" type="String" />
+        <property name="reimburstmentAmount" type="int"  />
+<!--&lt;!&ndash;do i add event type  GRADES re-!>-->
+   </class>
+
+</hibernate-mapping>
